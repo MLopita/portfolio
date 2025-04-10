@@ -102,6 +102,9 @@ export class AppComponent implements AfterViewInit {
       visuals: [
         {
           title: 'Profit Analysis',
+          images: [
+            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Profit%20Analysis.png?raw=true',
+          ],
           points: [
             'Revenue: ₹142.22M | Sales Quantity: 350K | Profit: ₹2.06M',
             'City-wise profit and revenue visuals',
@@ -110,6 +113,9 @@ export class AppComponent implements AfterViewInit {
         },
         {
           title: 'Performance Insight',
+          images: [
+            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Performance%20Insights.png?raw=true',
+          ],
           points: [
             'Market-wise revenue contribution',
             'Profit Target Slider',
@@ -118,7 +124,11 @@ export class AppComponent implements AfterViewInit {
           ]
         },
         {
-          title: 'Data Pane / Model Screenshot',
+          title: 'Data Pane / Model ',
+          images: [
+            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Data.png?raw=true',
+            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Model%20View.png?raw=true'
+          ],
           points: [
             'Show schema design, relationships, and calculated fields',
             'Optional: show key DAX measures used for KPIs'

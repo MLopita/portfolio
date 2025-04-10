@@ -169,7 +169,12 @@
     <ul>
       <li *ngFor="let point of visual.points">{{ point }}</li>
     </ul>
+  
+    <div class="visual-images">
+      <img *ngFor="let image of visual.images" [src]="image" alt="Visual" style="max-width: 100%; margin: 10px 0;">
+    </div>
   </div>
+  
 
   <h3>Insights & Impact:</h3>
   <ul>
