@@ -96,7 +96,7 @@ export class AppComponent implements AfterViewInit {
       title: 'Sales Insights Dashboard – ATILQ',
       objective: 'To develop a real-time sales dashboard that enables ATILQ to monitor sales quantity, revenue, profit, and regional performance.',
       summary: 'Built an automated Power BI dashboard connected to a centralized SQL Server database. Created interactive visuals to analyze revenue, profit margins, and customer segmentation. Implemented slicers for year/month filtering and dynamic region selection. Designed ETL pipeline to automate data flow, reducing manual effort by 20%. Supported better decision-making by surfacing key KPIs and underperforming areas.',
-      image: 'https://i.pinimg.com/736x/89/fd/8a/89fd8a433b5b78b1cb3d25d02a71fec5.jpg',
+      image: 'https://media.istockphoto.com/id/1488294044/photo/businessman-works-on-laptop-showing-business-analytics-dashboard-with-charts-metrics-and-kpi.jpg?s=1024x1024&w=is&k=20&c=VpSNiVam6Fw3egrJYnP28mEEAXyCjFRjqV_k4PK5S04=',
       techStack: 'SQL Server, Power BI, ETL, Data Visualization, Automation',
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
       visuals: [
