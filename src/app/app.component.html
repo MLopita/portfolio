@@ -5,7 +5,7 @@
   <div *ngIf="!selectedProject" class="sidebar" [class.open]="isSidebarOpen">
     <button class="close-btn" (click)="toggleSidebar()">✖</button>
     <ul>
-      <li><a href="#home" (click)="toggleSidebar()">Home</a></li>
+      <!-- <li><a href="#home" (click)="toggleSidebar()">Home</a></li> -->
       <li><a href="#about" (click)="toggleSidebar()">About Me</a></li>
       <li><a href="#skills" (click)="toggleSidebar()">Skills</a></li>
       <li><a href="#projects" (click)="toggleSidebar()">Projects</a></li>
@@ -27,10 +27,10 @@
   <nav *ngIf="!selectedProject" class="navbar">
     <button class="menu-btn" (click)="toggleSidebar()">☰</button>
     <div class="logo" >
-      <span class="logo-text">Lopita</span>
+      <span class="logo-text">My Portfolio</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <!-- <li><a href="#home">Home</a></li> -->
       <li><a href="#about">About Me</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -50,7 +50,7 @@
   
 
 <!-- Home Section -->
-<section *ngIf="!selectedProject" id="home" class="section about">
+<!-- <section *ngIf="!selectedProject" id="home" class="section about">
   <div class="home-container">
     
     <div class="home-content">
@@ -73,25 +73,43 @@
       <img src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8173.jpg?ga=GA1.1.117542238.1742992211&semt=ais_hybrid" alt="Lopita Mishra">
     </div>
   </div>
-</section>
-
+</section> -->
  <!-- About Me Section -->
 <section *ngIf="!selectedProject" id="about" class="section about">
   <div class="about-content">
-    <img src="https://avatars.githubusercontent.com/u/190205469?v=4" alt="My Photo" class="profile-pic" />
-    <div>
-      <h1>I'm <span class="highlight">Lopita Mishra</span></h1>
-      <p>
-        An Aspiring Business Intelligence Analyst with a specialization in data analysis, visualization, and reporting using Power BI, Excel, and SQL with a passion for learning with an endless supply of optimism and curiosity.
-        Having adequate skills, self motivated and
-        curious, with a keen interest in building user-centric products. Looking
-        forward to honing my skills in a challenging environment.
-      </p>
+    <div class="home-content">
+      <img src="https://avatars.githubusercontent.com/u/190205469?v=4" alt="My Photo" class="profile-pic" />
+      <h1>Lopita Mishra</h1>
+      <div class="homeSocials">
+        <a href="https://github.com/MLopita" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lopita-mishra-096534191/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:lopitamishra2001@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="home-image">
+      <div class="aboutme">
+        <h1>About Me</h1>
+        <p>
+          An Aspiring Business Intelligence Analyst with a specialization in data analysis, visualization, and reporting using Power BI, Excel, and SQL with a passion for learning with an endless supply of optimism and curiosity.
+          Having adequate skills, self motivated and
+          curious, with a keen interest in building user-centric products. Looking
+          forward to honing my skills in a challenging environment.
+        </p>
+        <button class="but1" (click)="downloadResume()">
+           Resume
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
-
+<hr class="section-divider" *ngIf="!selectedProject" />
   <!-- Skills Section -->
   <section *ngIf="!selectedProject" id="skills" class="section skills">
     <h2>Skills & Technologies</h2>
@@ -113,7 +131,8 @@
     </div>
   </section>
   
-  
+  <hr class="section-divider" *ngIf="!selectedProject"/>
+
   
   <!-- Projects Section -->
   <!-- <section id="projects" class="section projects">
@@ -143,7 +162,7 @@
     </div>
   </div>
 </section>
-
+<hr class="section-divider" *ngIf="!selectedProject"/>
   <!-- Project Detail View -->
 <div class="pDetails" *ngIf="selectedProject">
   <button (click)="backToList()" class="btn">← Back to Projects</button>
