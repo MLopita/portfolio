@@ -169,43 +169,100 @@
     </div>
   </div>
 </section>
+
+<!-- <section *ngIf="!selectedProject" id="projects" class="section projects">
+  <h2>Projects</h2>
+
+  <div class="carousel-section">
+    <button class="carousel-btn left" (click)="scrollCarousel('left')">&#8592;</button>
+
+    <div class="carousel-track" #carousel>
+      <div class="project-card" *ngFor="let project of projects">
+        <img [src]="project.image" [alt]="project.title" class="project-img" />
+        <h3>{{ project.title }}</h3>
+
+        <div class="project-summary-container">
+          <p class="project-summary">{{ project.summary }}</p>
+          <div class="tooltip-text">{{ project.summary }}</div>
+        </div>
+
+        <p><strong>Tech Stack:</strong> {{ project.techStack }}</p>
+        <button (click)="viewDetails(project)" class="btn">View Project Details</button>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" (click)="scrollCarousel('right')">&#8594;</button>
+  </div>
+</section> -->
+
+
+
 <hr class="section-divider" *ngIf="!selectedProject"/>
+
   <!-- Project Detail View -->
-<div class="pDetails" *ngIf="selectedProject">
-  <button (click)="backToList()" class="btn">← Back to Projects</button>
+<div class="project-details" *ngIf="selectedProject">
+  <button (click)="backToList()" class="back-btn">← Back to Projects</button>
 
-  <h2>{{ selectedProject.title }}</h2>
+  <h2 class="project-title">{{ selectedProject.title }}</h2>
 
-  <h3>Tools Used:</h3>
-  <p>{{ selectedProject.techStack }}</p>
+  <div class="project-section">
+    <h3>🛠 Tools Used:</h3>
+    <p>{{ selectedProject.techStack }}</p>
+  </div>
 
-  <h3>Objective:</h3>
-  <p>{{ selectedProject.objective }}</p>
+  <div class="project-section">
+    <h3>🎯 Objective:</h3>
+    <p>{{ selectedProject.objective }}</p>
+  </div>
 
-  <h3>Project Description:</h3>
-  <ul>
-    <li *ngFor="let line of selectedProject.summary.split('.')">
-      {{ line.trim() }}<span *ngIf="line.trim()">.</span>
-    </li>
-  </ul>
-
-  <h3>Key Visuals (Screenshots):</h3>
-  <div *ngFor="let visual of selectedProject.visuals">
-    <h4>{{ visual.title }}</h4>
-    <ul>
-      <li *ngFor="let point of visual.points">{{ point }}</li>
+  <div class="project-section">
+    <h3>📄 Project Description:</h3>
+    <ul class="description-list">
+      <li *ngFor="let line of selectedProject.summary.split('.')">
+        {{ line.trim() }}<span *ngIf="line.trim()">.</span>
+      </li>
     </ul>
-  
-    <div class="visual-images">
-      <img *ngFor="let image of visual.images" [src]="image" alt="Visual" style="max-width: 100%; margin: 10px 0;">
+  </div>
+
+  <div class="project-section">
+    <h3>🖼️ Key Visuals (Screenshots):</h3>
+    <div *ngFor="let visual of selectedProject.visuals" class="visual-block">
+      <h4>{{ visual.title }}</h4>
+      <ul>
+        <li *ngFor="let point of visual.points">{{ point }}</li>
+      </ul>
+      <div class="visual-images">
+        <img *ngFor="let image of visual.images" [src]="image" alt="Visual" />
+      </div>
     </div>
   </div>
-  
 
-  <h3>Insights & Impact:</h3>
-  <ul>
-    <li *ngFor="let insight of selectedProject.insights">{{ insight }}</li>
-  </ul>
+  <div class="project-section">
+    <h3>💡 Insights & Impact:</h3>
+    <ul class="insight-list">
+      <li *ngFor="let insight of selectedProject.insights">{{ insight }}</li>
+    </ul>
+  </div>
+
+  <div class="project-section project-links" *ngIf="selectedProject.files?.length || selectedProject.videos?.length">
+    <div *ngIf="selectedProject.files?.length">
+      <h4>📂 Project Files:</h4>
+      <ul>
+        <li *ngFor="let file of selectedProject.files">
+          <a [href]="file.url" target="_blank" class="link-btn">{{ file.name }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="selectedProject.videos?.length">
+      <h4>🎬 Walkthrough Videos:</h4>
+      <ul>
+        <li *ngFor="let video of selectedProject.videos">
+          <a [href]="video.url" target="_blank" class="link-btn">{{ video.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
   <!-- GitHub Contributions Section -->
   <!-- <section id="github-calendar" class="section">
