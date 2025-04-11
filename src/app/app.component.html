@@ -189,7 +189,7 @@
       </div>
     </div>
 
-    <button class="carousel-btn" (click)="nextSlide()" [disabled]="startIndex + 3 >= projects.length">›</button>
+    <button class="carousel-btn" (click)="nextSlide()" [disabled]="startIndex >= projects.length - 1">›</button>
   </div>
 </section>
 
