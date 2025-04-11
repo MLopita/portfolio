@@ -156,7 +156,14 @@
     <div class="project-card" *ngFor="let project of projects">
       <img [src]="project.image" [alt]="project.title" class="project-img" />
       <h3>{{ project.title }}</h3>
-      <p>{{ project.summary }}</p>
+      <div class="project-summary-container">
+        <p class="project-summary">
+          {{ project.summary }}
+        </p>
+        <div class="tooltip-text">
+          {{ project.summary }}
+        </div>
+      </div>
       <p><strong>Tech Stack:</strong> {{ project.techStack }}</p>
       <button (click)="viewDetails(project)" class="btn">View Project Details</button>
     </div>
@@ -250,4 +257,5 @@
     </div>
   </section>
   
+  <hr class="section-divider" *ngIf="!selectedProject" />
 </div>

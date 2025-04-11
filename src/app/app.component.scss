@@ -359,14 +359,54 @@
 }
 .section-divider {
   border: none;
-  height: 2px;
-  background: linear-gradient(to right, #007bff, #00c6ff);
+  height: 5px;
+  background: linear-gradient(to right, #abf2fc, #e5fc67);
   margin: 3rem auto;
   width: 60%;
   opacity: 0.6;
 }
 .section.about {
   background: linear-gradient(to right, #abf2fc, #e5fc67);
+}
+
+.project-summary-container {
+  position: relative;
+  display: inline-block;
+
+  .project-summary {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; // Show 5 lines
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 7.5em; // 5 lines * 1.5 line-height
+    line-height: 1.5em;
+    white-space: normal;
+    cursor: pointer;
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  &:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 
@@ -549,6 +589,7 @@
       }
     
       .home-content {
+        margin-top: 50px;
         order: 1; 
         text-align: left; 
         padding: 20px;
