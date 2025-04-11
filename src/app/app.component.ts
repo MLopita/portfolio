@@ -118,24 +118,6 @@ prevSlide() {
     document.body.removeChild(link);
   }
 
-
-
-  // projects = [
-  //   {
-  //     title: 'Sales Insights Dashboard  ATILQ',
-  //     objective: 'To develop a real-time sales dashboard that enables ATILQ to monitor sales quantity, revenue, profit, and regional performance.',
-  //     summary: 'Built an automated Power BI dashboard connected to a centralized SQL Server database.Created interactive visuals to analyze revenue, profit margins, and customer segmentation.Implemented slicers for year/month filtering and dynamic region selection. Designed ETL pipeline to automate data flow, reducing manual effort by 20%. Supported better decision-making by surfacing key KPIs and underperforming areas.',
-  //     image: 'https://i.pinimg.com/736x/89/fd/8a/89fd8a433b5b78b1cb3d25d02a71fec5.jpg',
-  //     techStack: 'SQL Server, Power BI, ETL, Data Visualization, Automation',
-  //     link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link'
-  //   }
-  // ];
-
-  // goToProjectDetails(title: string) {
-  //   this.router.navigate(['/project-detail', title]);
-  // }
-
-
   projects = [
     //Project 1
     {
@@ -187,7 +169,7 @@ prevSlide() {
         'Enabled the team to dynamically filter and explore performance by city/product.'
       ],
       files: [
-        { name: "PBIX File ", url: "https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/sales_insight.pbix" },
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
       ],
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
@@ -198,7 +180,7 @@ prevSlide() {
     {
       title: 'Adventure Works Cycle Sales Dashboard',
       objective: 'To design an interactive Power BI dashboard for Adventure Works Cycle that provides in-depth sales analytics and customer insights, enabling stakeholders to make data-driven decisions and identify key business opportunities.',
-      summary: 'This project focused on transforming Adventure Works’ raw sales and customer data into a visually compelling and insightful dashboard. The data included customer demographics, product categories, order details, and regional sales.Using Power Query, the data was cleaned and reshaped, followed by creating a robust data model in Power BI. DAX was used to calculate key performance metrics and enable interactive features like dynamic filtering, slicers, and tooltips. The final dashboard offered stakeholders a high-level overview as well as drill-down capabilities into customer, regional, and product-level performance',
+      summary: 'This project focused on transforming Adventure Works’ raw sales and customer data into a visually compelling and insightful dashboard. The data included customer demographics, product categories, order details, and regional sales using Power Query, the data was cleaned and reshaped, followed by creating a robust data model in Power BI. DAX was used to calculate key performance metrics and enable interactive features like dynamic filtering, slicers, and tooltips. The final dashboard offered stakeholders a high-level overview as well as drill-down capabilities into customer, regional, and product-level performance',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkFKa1KJ9bmOHNC3cgvj7H5wIvTYlVAR3zw&s',
       techStack: 'Power BI, Power Query, DAX, SQL Server, Excel, Data Modeling, Data Visualization',
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
@@ -287,7 +269,7 @@ prevSlide() {
         'Empowered the business team to monitor KPIs in real-time without manual effort.'
       ],
       files: [
-        { name: "PBIX File ", url: "https://github.com/MLopita/Adventure-works-Cycle-/blob/main/AdventureWorks%20Report.pbix" },
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1hkvSfCGSZNNLZ3Y8C6aUEORTKsvnWTFC/view?usp=drivesdk" },
       ],
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
@@ -295,9 +277,9 @@ prevSlide() {
     },
     //Project 3
     {
-      title: 'ETL Pipeline: IT Services Market Share Analysis (2020–2023)',
+      title: 'ETL Pipeline: IT Services Market Share Analysis (2019–2023)',
       objective: 'To build a robust ETL pipeline that automates the extraction, transformation, and loading of IT services market data into a MySQL database, followed by interactive analysis in Power BI to uncover trends and insights at vendor, region, and segment levels.',
-      summary: 'This project focused on designing and implementing an end-to-end ETL pipeline for IT services market data spanning the years 2020 to 2023. The source data, stored in multiple CSV files, was cleaned, transformed, and loaded into a centralized MySQL database using Python. Key components of the project included standardizing column names, handling null values, transforming currency formats, and optimizing query performance for large datasets. The final data was visualized in Power BI to track vendor-wise revenue trends, regional growth, and market segment performance.',
+      summary: 'This project focused on designing and implementing an end-to-end ETL pipeline for IT services market data spanning the years 2019 to 2023. The source data, stored in multiple CSV files, was cleaned, transformed, and loaded into a centralized MySQL database using Python. Key components of the project included standardizing column names, handling null values, transforming currency formats, and optimizing query performance for large datasets. The final data was visualized in Power BI to track vendor-wise revenue trends, regional growth, and market segment performance',
       image: 'https://images.icon-icons.com/2699/PNG/512/gartner_logo_icon_170114.png',
       techStack: 'Power BI, Power Query, DAX, Python, Pandas, MySQL, SQL, Excel, Data Modeling, Data Visualization, ETL Automation',
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
@@ -305,10 +287,10 @@ prevSlide() {
         {
           title: 'IT Services Market Dashboard',
           images: [
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Profit%20Analysis.png?raw=true',
+            'https://github.com/MLopita/IT-Services-Market-Share-ETL-Pipeline/blob/main/Power%20BI%20Dashboard/Dashboard.png?raw=true',
           ],
           points: [
-            '- KPIs: Total Revenue (₹11.77M), YoY Growth (15.39%), Vendor Share (96.89%), Vendor Revenue (₹11.41M)',
+            'KPIs: Total Revenue (₹11.77M), YoY Growth (15.39%), Vendor Share (96.89%), Vendor Revenue (₹11.41M)',
             'Year-wise slicer, Region and Vendor filters',
             "YoY Growth %, Cumulative and Running Total Revenue Trends",
             'Country-wise Revenue of Top 10 Markets',
@@ -318,20 +300,9 @@ prevSlide() {
           ]
         },
         {
-          title: 'Data Pane / Model ',
-          images: [
-            '',
-            ''
-          ],
-          points: [
-        
-          ]
-        },
-        {
           title: 'ETL Architecture Flowchart',
           images: [
-            '',
-            ''
+            'images/Blank diagram_page-0001.jpg',
           ],
           points: [
         
@@ -345,7 +316,8 @@ prevSlide() {
         'Reduced manual efforts with reusable, automated scripts for ETL.'
       ],
       files: [
-        { name: "PBIX File ", url: "https://github.com/MLopita/IT-Services-Market-Share-ETL-Pipeline/tree/main/Power%20BI%20Dashboard" },
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/19vr48cWLKitA2Y6FclYuLeibg5uwRxjQ/view?usp=drivesdk" },
+        { name: "PPT", url: "https://docs.google.com/presentation/d/1k2C96sXi-eCeSL5WUWjojyH5HlqySClZ/edit?usp=drivesdk&ouid=102164671172485530304&rtpof=true&sd=true" },
       ],
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
@@ -361,77 +333,44 @@ prevSlide() {
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
       visuals: [
         {
-          title: 'Monthly Sales Trend Line Chart',
+          title: 'Sales Performance Overview',
           images: [
            
           ],
           points: [
-            
+            'Monthly Sales Trend (Line Chart), Total Revenue & Average Order Value (Cards), Top Products by Revenue (Bar Chart)'
           ]
         },
         {
-          title: 'Total Revenue and Avg Order Value Cards',
+          title: 'Customer & Geographic Insights',
           images: [
            
           ],
           points: [
-            
+            'City-wise Orders (Map/Chart), Occasion-wise Sales Comparison, Product Popularity by Occasion'
           ]
         },
         {
-          title: 'Top Products by Revenue Bar Chart',
+          title: 'Operational Analysis',
           images: [
-          
+          'https://github.com/MLopita/Sales-Analysis-Dashboard-for-FNP/blob/main/fnp%20ss.png?raw=true'
           ],
           points: [
-           
-          ]
-        },
-        {
-          title: 'City-wise Orders Map/Chart',
-          images: [
-          
-          ],
-          points: [
-           
-          ]
-        },
-        {
-          title: 'Occasion-wise Sales Comparison',
-          images: [
-          
-          ],
-          points: [
-           
-          ]
-        },
-        {
-          title: 'Product Popularity by Occasion',
-          images: [
-          
-          ],
-          points: [
-           
-          ]
-        },
-        {
-          title: 'Order Quantity vs Delivery Time Scatter Plot',
-          images: [
-          
-          ],
-          points: [
-           
+           'Order Quantity vs Delivery Time (Scatter Plot)',
           ]
         }
       ],
       insights: [
-        'Excel and Electricalsara drove the highest profits.',
-        'Lucknow identified as an underperforming region (-2.7%).',
-        'Helped reduce sales spend by 10% through better regional strategy.',
-        'Enabled the team to dynamically filter and explore performance by city/product.'
+        'Identified peak sales periods around festivals, helping FNP plan marketing and inventory more   effectively.',
+        'Floral and personalized gifts were top-performing categories, guiding product focus.',
+        'Metro cities drove the highest sales, suggesting potential for targeted local campaigns.',
+        'B2B clients showed higher average order value, indicating growth opportunities in corporate     gifting',
+        'Moderate discounts proved effective, improving conversion rates without hurting margins.',
+        'Top-performing sales reps and underperforming regions were identified for better team management.',
+        'These insights helped FNP make smarter decisions in marketing, sales strategy, and product planning—leading to improved customer targeting and business growth.',
       ],
       files: [
-        { name: "PBIX File ", url: "https://github.com/MLopita/Adventure-works-Cycle-/blob/main/AdventureWorks%20Report.pbix" },
+        { name: "Excel File ", url: "https://github.com/MLopita/Sales-Analysis-Dashboard-for-FNP/blob/main/Fnp%20data%20analysis.xlsx" },
       ],
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
@@ -441,7 +380,7 @@ prevSlide() {
     {
       title: 'Topline Performance Dashboard – Maven Market',
       objective: 'Track topline KPIs such as total transactions, profit, returns, and revenue trends.Enable performance monitoring by city, country, and product brand to support strategic decisions. Deliver an intuitive and visually impactful Power BI dashboard to drive executive insights.',
-      summary: 'This project was built to analyze transactional and revenue data for Maven Market, focusing on key business metrics.The dashboard aggregates sales data from different cities and countries, highlighting top-performing brands and identifying high return rates.Excel was used for preprocessing, and Power BI was utilized to design the dashboard using relationships and calculated measures.The report includes structured Data Pane, Model View, and a single-tab dashboard named Topline Performance for ease of navigation and user focus.',
+      summary: 'This project was built to analyze transactional and revenue data for Maven Market, focusing on key business metrics.The dashboard aggregates sales data from different cities and countries, highlighting top-performing brands and identifying high return rates.Excel was used for preprocessing, and Power BI was utilized to design the dashboard using relationships and calculated measures.The report includes structured Data Pane, Model View, and a single-tab dashboard named Topline Performance for ease of navigation and user focus',
       image: 'https://media.licdn.com/dms/image/v2/D5612AQHiQJPTPZdFUA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1674270403634?e=2147483647&v=beta&t=wr22AvK_-G1voNv_-F19DatdLOelkKYK4-_DWRb0OIM',
       techStack: 'Microsoft Excel (Data Cleaning & Preprocessing) Power BI (Data Modeling, DAX, Dashboard Creation)',
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
@@ -449,7 +388,7 @@ prevSlide() {
         {
           title: 'Topline Performance',
           images: [
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Profit%20Analysis.png?raw=true',
+            'https://github.com/MLopita/Topline-Performance---Maven-Market-Report/blob/main/Topline%20Performance.png?raw=true',
           ],
           points: [
             'KPI Cards to display current month’s total transactions, profit, and return count along with comparison to goals.',
@@ -468,7 +407,7 @@ prevSlide() {
         {
           title: 'Data Pane / Model ',
           images: [
-            
+            'https://github.com/MLopita/Topline-Performance---Maven-Market-Report/blob/main/Model%20view.png?raw=true'
           ],
           points: [
             
@@ -482,7 +421,7 @@ prevSlide() {
         'Facilitated decision-making on product focus and country-level strategy optimization.'
       ],
       files: [
-        { name: "PBIX File ", url: "https://github.com/MLopita/Adventure-works-Cycle-/blob/main/AdventureWorks%20Report.pbix" },
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1boFrHkmHaRKuaWIC3T6XhX-2Lcorv5GN/view?usp=drivesdk" },
       ],
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
@@ -490,53 +429,43 @@ prevSlide() {
     },
     //Project 6
     {
-      title: 'Sales Insights Dashboard – ATILQ',
-      objective: 'To develop a real-time sales dashboard that enables ATILQ to monitor sales quantity, revenue, profit, and regional performance.',
-      summary: 'Built an automated Power BI dashboard connected to a centralized SQL Server database. Created interactive visuals to analyze revenue, profit margins, and customer segmentation. Implemented slicers for year/month filtering and dynamic region selection. Designed ETL pipeline to automate data flow, reducing manual effort by 20%. Supported better decision-making by surfacing key KPIs and underperforming areas.',
-      image: 'https://media.istockphoto.com/id/1488294044/photo/businessman-works-on-laptop-showing-business-analytics-dashboard-with-charts-metrics-and-kpi.jpg?s=1024x1024&w=is&k=20&c=VpSNiVam6Fw3egrJYnP28mEEAXyCjFRjqV_k4PK5S04=',
+      title: 'Green Beverage Sales performance Dashboard ',
+      objective: 'The objective of this project is to analyze sales data from various sources (Sales, Customer, Product, Region) to derive meaningful insights. The dashboard highlights key performance indicators (KPIs), sales trends, customer segmentation, and volume forecasts. The goal is to provide actionable insights that help businesses optimize their sales strategies, manage customer relationships, and assess product performance.',
+      summary: 'This project involves integrating sales data across multiple sources, including Sales, Customer, Region, Product, and Sales Person tables. The data is cleaned and transformed in Excel, then loaded into Power BI for visualization. Key metrics such as total sales, sales by region, free goods calculation, and sales person performance are analyzed. The project also includes interactive elements like slicers to filter data based on region, product category, or time period',
+      image: 'https://img.freepik.com/free-photo/matcha-glass-with-ice-created-with-generative-ai-technology_185193-162611.jpg?semt=ais_hybrid&w=740',
       techStack: 'SQL Server, Power BI, ETL, Data Visualization, Automation',
       link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
       visuals: [
         {
-          title: 'Profit Analysis',
+          title: 'Dashboard',
           images: [
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Profit%20Analysis.png?raw=true',
+            
           ],
           points: [
-            'Revenue: ₹142.22M | Sales Quantity: 350K | Profit: ₹2.06M',
-            'City-wise profit and revenue visuals',
-            'Monthly trend (line chart) and customer performance'
+            'Sales Trends: Line charts to display sales over time by region and product category.',
+
+            'Regional Sales Distribution: Bar charts showing total sales by region and product.',
+
+           ' Customer Segmentation: Pie charts representing sales volume by customer type.',
+
+            'Top Products and Sales People: Bar charts ranking products and sales personnel by sales performance.',
+
+            'Free Goods Calculation: A card visual showing total free goods allocated based on discount percentages.'
           ]
         },
-        {
-          title: 'Performance Insight',
-          images: [
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Performance%20Insights.png?raw=true',
-          ],
-          points: [
-            'Market-wise revenue contribution',
-            'Profit Target Slider',
-            'Bar & Line combo chart for region performance',
-            'Matrix showing customer-wise profit'
-          ]
-        },
-        {
-          title: 'Data Pane / Model ',
-          images: [
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Data.png?raw=true',
-            'https://github.com/MLopita/Sales-Insights-Dashboard-for-ATILQ/blob/main/Model%20View.png?raw=true'
-          ],
-          points: [
-            'Show schema design, relationships, and calculated fields',
-            'Optional: show key DAX measures used for KPIs'
-          ]
-        }
       ],
       insights: [
-        'Excel and Electricalsara drove the highest profits.',
-        'Lucknow identified as an underperforming region (-2.7%).',
-        'Helped reduce sales spend by 10% through better regional strategy.',
-        'Enabled the team to dynamically filter and explore performance by city/product.'
+        'Sales Trends: Identified peak sales periods and seasonal trends, allowing for better inventory and staffing decisions.',
+
+        'Regional Sales Performance: Pinpointed high-performing regions and underperforming areas, leading to targeted marketing campaigns.',
+        
+        'Customer Segmentation: Discovered that certain customer types receive higher discounts and drive more sales, influencing future sales strategies.',
+        
+        'Product Performance: Helped identify top-selling products, which can inform restocking and marketing efforts.',
+        
+        'Sales Team Effectiveness: Recognized top-performing salespeople, which aids in incentive distribution and performance reviews.',
+
+        'By providing a holistic view of the sales process, this project enables data-driven decision-making for optimizing sales strategies and customer management.'
       ]
     }
     // add more projects
