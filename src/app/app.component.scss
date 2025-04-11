@@ -739,9 +739,7 @@
     }
   }
   
-// Project card carousal starts here
 
-// Project card carousal ends here
 
 
 // 📱 Responsive tweak
@@ -761,3 +759,81 @@
   }
   
 }
+
+
+// Project card carousal starts here
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn {
+  background-color: #2faab1;
+  color: white;
+  font-size: 24px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.project-card {
+  background: white;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #abf2fc, #e5fc67) 1;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  flex: 0 0 auto; /* Prevent stretching */
+  width: 100%;
+  max-width: 300px; /* Default max width for most screens */
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Medium screens - show 2 cards per row */
+@media (max-width: 992px) {
+  .project-card {
+    max-width: 32vw;
+  }
+}
+
+/* Small screens - show 1 card */
+@media (max-width: 600px) {
+  .project-card {
+    max-width: 68vw;
+  }
+
+  .projects-container {
+    gap: 10px;
+  }
+}
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+// Project card carousal ends here

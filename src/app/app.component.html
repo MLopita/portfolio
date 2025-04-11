@@ -150,7 +150,7 @@
 
 
   <!-- Project List -->
-<section *ngIf="!selectedProject" id="projects" class="section projects">
+<!-- <section *ngIf="!selectedProject" id="projects" class="section projects">
   <h2>Projects</h2>
   <div class="projects-container">
     <div class="project-card" *ngFor="let project of projects">
@@ -168,32 +168,30 @@
       <button (click)="viewDetails(project)" class="btn">View Project Details</button>
     </div>
   </div>
-</section>
+</section> -->
 
-<!-- <section *ngIf="!selectedProject" id="projects" class="section projects">
+<section *ngIf="!selectedProject" id="projects" class="section projects">
   <h2>Projects</h2>
 
-  <div class="carousel-section">
-    <button class="carousel-btn left" (click)="scrollCarousel('left')">&#8592;</button>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn" (click)="prevSlide()" [disabled]="startIndex === 0">‹</button>
 
-    <div class="carousel-track" #carousel>
-      <div class="project-card" *ngFor="let project of projects">
+    <div class="projects-container">
+      <div class="project-card" *ngFor="let project of visibleProjects">
         <img [src]="project.image" [alt]="project.title" class="project-img" />
         <h3>{{ project.title }}</h3>
-
         <div class="project-summary-container">
           <p class="project-summary">{{ project.summary }}</p>
           <div class="tooltip-text">{{ project.summary }}</div>
         </div>
-
         <p><strong>Tech Stack:</strong> {{ project.techStack }}</p>
         <button (click)="viewDetails(project)" class="btn">View Project Details</button>
       </div>
     </div>
 
-    <button class="carousel-btn right" (click)="scrollCarousel('right')">&#8594;</button>
+    <button class="carousel-btn" (click)="nextSlide()" [disabled]="startIndex + 3 >= projects.length">›</button>
   </div>
-</section> -->
+</section>
 
 
 
@@ -201,7 +199,9 @@
 
   <!-- Project Detail View -->
 <div class="project-details" *ngIf="selectedProject">
-  <button (click)="backToList()" class="back-btn">← Back to Projects</button>
+  <button (click)="backToList()" class="back-btn">
+    <a href="#projects" style="text-decoration: none; color: inherit;">← Back to Projects</a>
+  </button>
 
   <h2 class="project-title">{{ selectedProject.title }}</h2>
 
