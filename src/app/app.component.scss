@@ -390,10 +390,10 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     position: absolute;
-    top: 100%;
+    top: -20%;
     left: 0;
     z-index: 10;
-    background-color: #333;
+    background-color: #69b4b9;
     color: #fff;
     padding: 10px;
     border-radius: 8px;
@@ -821,7 +821,7 @@
 /* Small screens - show 1 card */
 @media (max-width: 600px) {
   .project-card {
-    max-width: 68vw;
+    max-width: 62vw;
   }
 
   .projects-container {

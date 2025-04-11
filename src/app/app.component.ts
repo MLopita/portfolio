@@ -466,6 +466,12 @@ prevSlide() {
         'Sales Team Effectiveness: Recognized top-performing salespeople, which aids in incentive distribution and performance reviews.',
 
         'By providing a holistic view of the sales process, this project enables data-driven decision-making for optimizing sales strategies and customer management.'
+      ],
+      files: [
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
+      ],
+      videos: [
+        { name: "Dashboard Walkthrough Video", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
       ]
     }
     // add more projects
