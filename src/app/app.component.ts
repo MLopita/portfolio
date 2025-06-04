@@ -172,7 +172,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
 
     },
@@ -272,7 +272,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1hkvSfCGSZNNLZ3Y8C6aUEORTKsvnWTFC/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
     },
     //Project 3
@@ -320,7 +320,7 @@ prevSlide() {
         { name: "PPT", url: "https://docs.google.com/presentation/d/1k2C96sXi-eCeSL5WUWjojyH5HlqySClZ/edit?usp=drivesdk&ouid=102164671172485530304&rtpof=true&sd=true" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
     },
     //Project 4
@@ -373,7 +373,7 @@ prevSlide() {
         { name: "Excel File ", url: "https://github.com/MLopita/Sales-Analysis-Dashboard-for-FNP/blob/main/Fnp%20data%20analysis.xlsx" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
     },
     //Project 5
@@ -424,7 +424,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1boFrHkmHaRKuaWIC3T6XhX-2Lcorv5GN/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
     },
     //Project 6
@@ -471,7 +471,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "" }
+        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
     }
     // add more projects
