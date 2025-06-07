@@ -172,7 +172,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1Wx1O10wLPgjy8miUIMcwBVKrq0HE3Lc_/view?usp=drivesdk" }
       ]
 
     },
@@ -320,7 +320,7 @@ prevSlide() {
         { name: "PPT", url: "https://docs.google.com/presentation/d/1k2C96sXi-eCeSL5WUWjojyH5HlqySClZ/edit?usp=drivesdk&ouid=102164671172485530304&rtpof=true&sd=true" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1X0acqCvGMmvkqtON5rY9W7I7FBtJLF4S/view?usp=drivesdk" }
       ]
     },
     //Project 4
@@ -424,7 +424,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1boFrHkmHaRKuaWIC3T6XhX-2Lcorv5GN/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1X2jCA42fAhniwJozQN5I7ob2J4LlqWd8/view?usp=drivesdk" }
       ]
     },
     //Project 6
