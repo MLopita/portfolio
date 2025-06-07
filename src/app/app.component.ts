@@ -101,7 +101,7 @@ prevSlide() {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
   downloadResume() {
-    const resumeUrl = "pdf/Lopita_Mishra_Resume.pdf"; // Relative path
+    const resumeUrl = "https://drive.google.com/file/d/1-vYaHBhpXAN4s5nJN_5pWHoQCBU_90Ig/view?usp=drivesdk"; // Relative path
   
     // Open in a new tab
     const newTab = window.open(resumeUrl, "_blank");
