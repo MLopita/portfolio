@@ -272,7 +272,7 @@ prevSlide() {
         { name: "PBIX File ", url: "https://drive.google.com/file/d/1hkvSfCGSZNNLZ3Y8C6aUEORTKsvnWTFC/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1X4OIQIA7FbMlbrxfTfi7236zEfiHKS1f/view?usp=drivesdk" }
       ]
     },
     //Project 3
