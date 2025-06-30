@@ -881,3 +881,67 @@
 }
 
 // Project card carousal ends here
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.certificate-card {
+  display: block;
+  background: #30a8ac;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #abf2fc, #e5fc67);
+  border-image-slice: 1;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+  h3 {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    margin-top: 0.75rem;
+    background-color: white;
+    color: #30a8ac;
+    border: 2px solid #30a8ac;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #30a8ac;
+      color: white;
+    }
+  }
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.full-certificate-img {
+  display: block;
+  max-width: 90%;
+  margin: 1rem auto 0;
+  border: 3px solid #30a8ac;
+  border-radius: 8px;
+}
+

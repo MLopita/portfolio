@@ -49,31 +49,6 @@
   </nav>
   
 
-<!-- Home Section -->
-<!-- <section *ngIf="!selectedProject" id="home" class="section about">
-  <div class="home-container">
-    
-    <div class="home-content">
-      <h1>Hello, I'm <span class="highlight">Lopita Mishra</span> 😊</h1>
-      <h3>I'm an Aspiring Business Intelligence Analyst who enjoys designing creative and delightful experiences.</h3>
-
-      <div class="homeSocials">
-        <a href="https://github.com/MLopita" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lopita-mishra-096534191/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:lopitamishra2001@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    <div class="home-image">
-      <img src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8173.jpg?ga=GA1.1.117542238.1742992211&semt=ais_hybrid" alt="Lopita Mishra">
-    </div>
-  </div>
-</section> -->
  <!-- About Me Section -->
 <section *ngIf="!selectedProject" id="about" class="section about">
   <div class="about-content">
@@ -157,6 +132,25 @@
   </div>
 </section>
 
+<section *ngIf="!selectedCertificate" id="certifications" class="section certifications">
+  <h2>Certifications</h2>
+
+  <div class="certificates-container">
+    <div class="certificate-card" *ngFor="let cert of certificates">
+      <img [src]="cert.thumbnail" [alt]="cert.title" class="certificate-img" />
+      <h3>{{ cert.title }}</h3>
+      <button (click)="viewCertificate(cert)" class="btn">View Certificate</button>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Detail View -->
+<section *ngIf="selectedCertificate" class="section certificate-details">
+  <button (click)="closeCertificate()" class="btn">← Back</button>
+  <h2>{{ selectedCertificate.title }}</h2>
+  <img [src]="selectedCertificate.fullImage" [alt]="selectedCertificate.title" class="full-certificate-img" />
+</section>
+
 
 
 <hr class="section-divider" *ngIf="!selectedProject"/>
@@ -228,22 +222,6 @@
     </div>
   </div>
 </div>
-  <!-- GitHub Contributions Section -->
-  <!-- <section id="github-calendar" class="section">
-    <h2>My GitHub Contributions</h2>
-    <div class="calendar"></div>  
-  </section>   -->
-
-  <!-- Resume Section -->
-  <!-- <section id="resume" class="section resume">
-    <h2>Resume</h2>
-    <p>Looking for a Passionate Developer? Here’s My Resume!🔥</p>
-    <div class="socials">
-      <button class="but1" (click)="downloadResume()">
-        <i class="fas fa-download"></i> Resume
-      </button>
-    </div>
-  </section> -->
   
 
   <!-- Contact Section -->

@@ -17,8 +17,81 @@ import { ThemeService } from './theme.service';
 })
 export class AppComponent implements AfterViewInit {
   visibleProjects: any[] = [];
-startIndex = 0;
-projectsToShow = 3;
+  startIndex = 0;
+  projectsToShow = 3;
+  certificates = [
+    {
+      title: 'Business Analyst Certification',
+      thumbnail: 'assets/certificates/angular-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Lopita%20Mishra%20-%20Business%20Analyst%20Certification.jpg?raw=true',
+    },
+    {
+      title: 'Business Analysis and Process Management',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Business%20Analysis%20&%20Process%20Management-Certificate.jpg?raw=true',
+    },
+    {
+      title: 'Career Essentials in Business Analysis by Microsoft and LinkedIn',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Career%20Essentials%20in%20Business%20Analysis%20by%20Microsoft%20and%20LinkedIn-Certificate.jpg?raw=true',
+    },{
+      title: 'Lean Six Sigma White Belt Certified',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Lean%20Six%20Sigma%20White%20Belt-Certificate.jpg?raw=true',
+    },{
+      title: 'Project Management Essentials Certified',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/PMEC%20Certificate.jpg?raw=true',
+    },{
+      title: 'SQL for Data Science',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/SQL-Data-Science-Certificate.jpg?raw=true',
+    },{
+      title: 'Microsoft Power BI Desktop For Business Intelligence',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Power%20Bi%20for%20%20BI%20(Maven)-Certificate.jpg?raw=true',
+    },{
+      title: 'Six Sigma Yellow Belt',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/SixSigmaYellowbelt-Certificate.jpg?raw=true',
+    },{
+      title: 'Scrum Fundamentals Certified',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/ScrumFundamentalsCertificate.jpg?raw=true',
+    },{
+      title: 'Business Intelligence using Power BI',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Bi%20Using%20powerbi%20(skillnation)-Certificate.jpg?raw=true',
+    },{
+      title: 'Professional Diploma in Agile and Scrum',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Agile%20And%20Scrum%20Certificate.jpg?raw=true',
+    },{
+      title: 'Data Analytics & Visualization: Using Excel and Python',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/data%20analysis%20using%20excel%20and%20python-Certificate.jpg?raw=true',
+    },{
+      title: 'Introduction to Data Analysis using Microsoft Excel',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Coursera%20ms%20excel%20for%20DA-certificate.jpg?raw=true',
+    },{
+      title: 'Data Analytics Job Simulation Certificate by Deloitte',
+      thumbnail: 'assets/certificates/spring-cert-thumb.jpg',
+      fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Data%20Analytics%20Job%20Simulation%20Certificate%20by%20Deloitte.jpg',
+    },
+    // Add more certificates here
+  ];
+
+  selectedCertificate: any = null;
+
+  viewCertificate(cert: any) {
+    this.selectedCertificate = cert;
+  }
+
+  closeCertificate() {
+    this.selectedCertificate = null;
+  }
+
 
 ngOnInit() {
   this.setProjectsToShow();
