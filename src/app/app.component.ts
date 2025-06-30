@@ -486,7 +486,7 @@ prevSlide() {
         {
           title: 'Flipkart Mobile Dashboard',
           images: [
-            'https://drive.google.com/file/d/1_Pv2U4ZPgXlNCRfz5ejl1N5pmFFPpmCF/view',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/Flipkart%20Sales%20Analysis%20Dashboard_page-0001.jpg',
           ],
           points: [
             'KPI Cards for average rating, discount %, and selling price across the dataset.',
@@ -501,7 +501,7 @@ prevSlide() {
         {
           title: 'Data Pane / Model View',
           images: [
-            'https://drive.google.com/file/d/1WaG1_zoVe8ZFIh0OwzZUZw3mySLzZM6s/view?usp=drivesdk',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/DAX.png',
           ],
           points: [
             
