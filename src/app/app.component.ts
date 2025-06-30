@@ -473,7 +473,56 @@ prevSlide() {
       videos: [
         { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
       ]
-    }
+    },
+    //Project 7
+    {
+      title: 'Flipkart Mobile Data Analysis – Power BI Dashboard',
+      objective: "Analyze smartphone listings from Flipkart to understand brand presence, pricing tiers, and popular specifications. Identify trends in average ratings, discounts, and profit margins to support pricing and marketing strategies. Deliver an interactive Power BI dashboard with dynamic filters and custom DAX measures for detailed exploration.",
+      summary: "The project uses scraped Flipkart data containing over 4,000 mobile listings across 17 brands. Price segmentation was performed to classify phones into low, mid, and premium tiers based on original prices. Excel was used for preliminary cleaning (removing nulls, standardizing columns), followed by Power BI for dashboard development. Custom DAX measures were formulated to calculate average discount %, profit %, and ratings. The final dashboard enables detailed drill-downs by brand, price tier, RAM-storage combinations, and color preferences",
+      image: 'https://assets.entrepreneur.com/content/3x2/2000/20180511063849-flipkart-logo-detail-icon.jpeg',
+      techStack: 'Microsoft Excel (Preliminary Data Cleaning), Power BI (Data Modeling, DAX Calculations, Visualizations)',
+      link: 'https://drive.google.com/file/d/19h0Pe99JLymg_q6NaTU-nsSiHLK6Kiu1/view?usp=share_link',
+      visuals: [
+        {
+          title: 'Flipkart Mobile Dashboard',
+          images: [
+            'https://drive.google.com/file/d/1_Pv2U4ZPgXlNCRfz5ejl1N5pmFFPpmCF/view',
+          ],
+          points: [
+            'KPI Cards for average rating, discount %, and selling price across the dataset.',
+            'Pie Chart for distribution of mobile phones by price range (Low, Mid, Premium).',
+            'Bar Chart comparing original vs. selling price for top brands.',
+            'Stacked Bar Chart showing price range coverage by brand to identify who serves all segments.',
+            'Column Chart for frequency of RAM + Storage combinations across listings.',
+            'Donut Chart displaying model count by brand.',
+            'Slicer Filters to explore data by brand, price tier, and color.',
+          ]
+        },
+        {
+          title: 'Data Pane / Model View',
+          images: [
+            'https://drive.google.com/file/d/1WaG1_zoVe8ZFIh0OwzZUZw3mySLzZM6s/view?usp=drivesdk',
+          ],
+          points: [
+            
+          ]
+        },
+      ],
+      insights: [
+           'Samsung had the highest number of listings, offering phones across all price ranges.',
+           'Most listings were in the mid-range segment (₹10,000–₹25,000), highlighting demand sensitivity.',
+           'Common configurations included 6 GB RAM + 128GB storage, and Black and Blue were the most listed colors.',
+           'Calculated a profit gap of up to 40% between original and selling price for certain models.',
+           'Enabled brand-level insights for price strategy, specification offerings, and potential repositioning'
+      ],
+      files: [
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1v5OrHr9MvgctDIbwT8fxj1obh4hU9HEn/view?usp=drivesdk" },
+      ],
+      videos: [
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1_R0lYSwHm-B3WvwJ4vY0cE5svcB9HNEb/view?usp=drivesdk" }
+      ]
+
+    },
     // add more projects
   ];
 
