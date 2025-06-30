@@ -891,41 +891,39 @@
 }
 
 .certificate-card {
-  display: block;
-  background: #30a8ac;
-  color: white;
-  padding: 1rem;
+  background: #ffffff; // white background
+  color: #333;
+  padding: 0.75rem;
   text-align: center;
   border: 2px solid transparent;
   border-image: linear-gradient(to right, #abf2fc, #e5fc67);
   border-image-slice: 1;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 180px; // smaller size
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     cursor: pointer;
   }
 
   h3 {
-    margin-top: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
   }
 
   .btn {
-    margin-top: 0.75rem;
-    background-color: white;
-    color: #30a8ac;
-    border: 2px solid #30a8ac;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+    margin-top: 0.5rem;
+    background-color: #30a8ac;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 4px;
 
     &:hover {
-      background-color: #30a8ac;
-      color: white;
+      background-color: #27989b;
     }
   }
 }
@@ -933,15 +931,15 @@
 .certificate-img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  border: 2px solid white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
 }
 
 .full-certificate-img {
   display: block;
   max-width: 90%;
   margin: 1rem auto 0;
-  border: 3px solid #30a8ac;
-  border-radius: 8px;
+  border: 2px solid #30a8ac;
+  border-radius: 6px;
 }
 
