@@ -370,10 +370,10 @@ prevSlide() {
         'These insights helped FNP make smarter decisions in marketing, sales strategy, and product planning—leading to improved customer targeting and business growth.',
       ],
       files: [
-        { name: "Excel File ", url: "https://github.com/MLopita/Sales-Analysis-Dashboard-for-FNP/blob/main/Fnp%20data%20analysis.xlsx" },
+        { name: "Excel File ", url: "https://docs.google.com/spreadsheets/d/172HL1KjDXItI0Y6NXSCtNFtXbrawRNIJ/edit?usp=drivesdk&ouid=102164671172485530304&rtpof=true&sd=true" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1fuxw4upe3y-KPJlUuFJOzs08Txvxy-TG/view?usp=drivesdk" }
       ]
     },
     //Project 5
