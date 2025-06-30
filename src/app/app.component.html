@@ -132,10 +132,10 @@
   </div>
 </section>
 
-<section id="certificates" class="section certificates" *ngIf="!selectedCertificate">
+<section id="certificates" class="section certificates">
   <h2>Certificates</h2>
 
-  <div class="carousel-wrapper">
+  <div class="carousel-wrapper" *ngIf="!selectedCertificate" >
     <button class="carousel-btn" (click)="prevCertificate()" [disabled]="certificateStartIndex === 0">‹</button>
 
     <div class="certificates-container">
