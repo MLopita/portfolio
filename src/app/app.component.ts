@@ -93,7 +93,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   certificateStartIndex = 0;
-visibleCount = 3; // Number of certs visible at a time
+visibleCount = 2; // Number of certs visible at a time
 
 get visibleCertificates() {
   return this.certificates.slice(this.certificateStartIndex, this.certificateStartIndex + this.visibleCount);
