@@ -135,18 +135,24 @@
 <section id="certificates" class="section certificates" *ngIf="!selectedProject">
   <h2>Certificates</h2>
 
-  <div class="carousel-wrapper" *ngIf="!selectedCertificate" >
-    <button class="carousel-btn" (click)="prevCertificate()" [disabled]="certificateStartIndex === 0">‹</button>
+  <div class="carousel-wrapper2" *ngIf="!selectedCertificate">
+    <button class="carousel-btn2 left" (click)="prevCertificate()" [disabled]="certificateStartIndex === 0">‹</button>
 
-    <div class="certificates-container">
-      <div class="certificate-card" *ngFor="let cert of visibleCertificates">
-        <img [src]="cert.thumbnail" [alt]="cert.title" class="certificate-img" />
-        <h3>{{ cert.title }}</h3>
-        <button class="btn" (click)="viewCertificate(cert)">View Certificate</button>
+    <div class="certificates-carousel">
+      <div class="certificates-container">
+        <div class="certificate-card" *ngFor="let cert of visibleCertificates">
+          <img [src]="cert.thumbnail" [alt]="cert.title" class="certificate-img" />
+          <h3>{{ cert.title }}</h3>
+          <button class="btn" (click)="viewCertificate(cert)">View</button>
+        </div>
       </div>
     </div>
 
-    <button class="carousel-btn" (click)="nextCertificate()" [disabled]="certificateStartIndex >= certificates.length - visibleCount">›</button>
+    <button
+      class="carousel-btn2 right"
+      (click)="nextCertificate()"
+      [disabled]="certificateStartIndex >= certificates.length - visibleCount"
+    >›</button>
   </div>
 </section>
 

@@ -95,8 +95,30 @@ export class AppComponent implements AfterViewInit {
   certificateStartIndex = 0;
 visibleCount = 2; // Number of certs visible at a time
 
+certificatesToShow = 2;
+
+setCertificatesToShow() {
+  const width = window.innerWidth;
+  if (width <= 600) {
+    this.certificatesToShow = 2;
+  } else if (width <= 992) {
+    this.certificatesToShow = 3;
+  } else {
+    this.certificatesToShow = 5;
+  }
+}
+
 get visibleCertificates() {
-  return this.certificates.slice(this.certificateStartIndex, this.certificateStartIndex + this.visibleCount);
+  return this.certificates.slice(
+    this.certificateStartIndex,
+    this.certificateStartIndex + this.certificatesToShow
+  );
+}
+
+nextCertificate() {
+  if (this.certificateStartIndex < this.certificates.length - this.certificatesToShow) {
+    this.certificateStartIndex++;
+  }
 }
 
 prevCertificate() {
@@ -105,22 +127,18 @@ prevCertificate() {
   }
 }
 
-nextCertificate() {
-  if (this.certificateStartIndex < this.certificates.length - this.visibleCount) {
-    this.certificateStartIndex++;
-  }
-}
 
 ngOnInit() {
   this.setProjectsToShow();
   this.updateVisibleProjects();
-
+  this.setCertificatesToShow();
   window.addEventListener('resize', this.onResize.bind(this));
 }
 
 onResize() {
   this.setProjectsToShow();
   this.updateVisibleProjects();
+  this.setCertificatesToShow();
 }
 
 setProjectsToShow() {
@@ -530,7 +548,7 @@ prevSlide() {
         {
           title: 'Dashboard',
           images: [
-            
+            'https://drive.google.com/file/d/1NmcTO-Fh-nBiY36KugEwhIQQ4n8bGXcN/view?usp=drivesdk',
           ],
           points: [
             'Sales Trends: Line charts to display sales over time by region and product category.',
@@ -543,6 +561,12 @@ prevSlide() {
 
             'Free Goods Calculation: A card visual showing total free goods allocated based on discount percentages.'
           ]
+        },
+        {
+          title: 'Data/Model View',
+          images: [
+            'https://drive.google.com/file/d/1g2M77s7hf0JqfWvm_UNMyCRDC4vQRrN8/view?usp=drivesdk',
+          ],
         },
       ],
       insights: [
@@ -559,10 +583,10 @@ prevSlide() {
         'By providing a holistic view of the sales process, this project enables data-driven decision-making for optimizing sales strategies and customer management.'
       ],
       files: [
-        { name: "PBIX File ", url: "https://drive.google.com/file/d/1OwIXD66RXG2V3O6KGf7Y_KFHjQtXcqui/view?usp=drivesdk" },
+        { name: "PBIX File ", url: "https://drive.google.com/file/d/1k6tsfW5sjBxOjEF0ZTkah3HNNVT9nJVK/view?usp=drivesdk" },
       ],
       videos: [
-        { name: "Dashboard Walkthrough Video", url: "https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-10.png" }
+        { name: "Dashboard Walkthrough Video", url: "https://drive.google.com/file/d/1g1E5ZO8tJtDtcoj6Xkx97x8Up41WoQvP/view?usp=drivesdk" }
       ]
     },
     //Project 7
