@@ -100,7 +100,7 @@ certificatesToShow = 2;
 setCertificatesToShow() {
   const width = window.innerWidth;
   if (width <= 600) {
-    this.certificatesToShow = 2;
+    this.certificatesToShow = 1;
   } else if (width <= 992) {
     this.certificatesToShow = 3;
   } else {
