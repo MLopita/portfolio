@@ -47,7 +47,7 @@ export class AppComponent implements AfterViewInit {
     },
     {
       title: 'Six Sigma Yellow Belt',
-      thumbnail: 'https://www.aidoos.com/media/aidoos_product/Coursera.png',
+      thumbnail: 'https://play-lh.googleusercontent.com/4wEASxZEl-5mbu7QKt-bcw1EZt9d67vMUz_OTWcyMPS8_u5IaEYyYZ45IqrEE6Im6gIm',
       fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/SixSigmaYellowbelt-Certificate.jpg?raw=true',
     },
     {
@@ -77,7 +77,7 @@ export class AppComponent implements AfterViewInit {
     },
     {
       title: 'Lean Six Sigma White Belt Certified',
-      thumbnail: 'https://play-lh.googleusercontent.com/4wEASxZEl-5mbu7QKt-bcw1EZt9d67vMUz_OTWcyMPS8_u5IaEYyYZ45IqrEE6Im6gIm',
+      thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwsP28-u-HHTxnP8ffB1Mi3YAtFyvYNheRpw&s',
       fullImage: 'https://github.com/MLopita/portfolio/blob/master/Certificates/Lean%20Six%20Sigma%20White%20Belt-Certificate.jpg?raw=true',
     }, 
     {
@@ -137,6 +137,22 @@ export class AppComponent implements AfterViewInit {
       this.certificateStartIndex--;
     }
   }
+
+  get visibleRange(): string {
+    const start = this.certificateStartIndex + 1;
+    const end = Math.min(this.certificateStartIndex + this.certificatesToShow, this.certificates.length);
+    return start === end ? `${start}` : `${start}–${end}`;  
+  }
+  get projectVisibleRange(): string {
+    const start = this.startIndex + 1;
+    const end = Math.min(this.startIndex + this.projectsToShow, this.projects.length);
+    return start === end ? `${start}` : `${start}–${end}`;
+  }
+  get projectRangeLabel(): string {
+    const total = this.projects.length;
+    return `${this.projectVisibleRange} of ${total}`;
+  }
+
 
 
 ngOnInit() {

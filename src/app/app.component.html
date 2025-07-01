@@ -131,6 +131,11 @@
     <button class="carousel-btn" (click)="nextSlide()" [disabled]="startIndex >= projects.length - 1">›</button>
   </div>
 </section>
+<div *ngIf="!selectedProject" class="range-indicator">
+  Showing {{ projectRangeLabel }}
+</div>
+
+  <hr class="section-divider" *ngIf="!selectedProject"/>
 
 <section id="certificates" class="section certificates" *ngIf="!selectedProject">
   <h2>Certificates</h2>
@@ -155,6 +160,9 @@
     >›</button>
   </div>
 </section>
+<div *ngIf="!selectedProject" class="certificate-indicator">
+  Showing {{ visibleRange }} of {{ certificates.length }}
+</div>
 
 
 <!-- Certificate Detail View -->
