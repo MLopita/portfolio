@@ -335,7 +335,7 @@ prevSlide() {
         {
           title: 'Data/Model View',
           images: [
-            'https://drive.google.com/file/d/1g2M77s7hf0JqfWvm_UNMyCRDC4vQRrN8/view?usp=drivesdk',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/DAX%20.png',
           ],
         },
       ],
