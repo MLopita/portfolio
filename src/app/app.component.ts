@@ -316,7 +316,9 @@ prevSlide() {
         {
           title: 'Dashboard',
           images: [
-            'https://drive.google.com/file/d/1NmcTO-Fh-nBiY36KugEwhIQQ4n8bGXcN/view?usp=drivesdk',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/Green%20Beverage%20Dashboard_page-0001.jpg',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/Green%20Beverage%20Dashboard_page-0002.jpg',
+            'https://raw.githubusercontent.com/MLopita/portfolio/refs/heads/master/Green%20Beverage%20Dashboard_page-0003.jpg'
           ],
           points: [
             'Sales Trends: Line charts to display sales over time by region and product category.',
